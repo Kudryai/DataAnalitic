@@ -1,1 +1,1 @@
-import pandas as pd
+print('Привет')
