@@ -9,6 +9,9 @@ scrapy = "*"
 beautifulsoup4 = "*"
 numpy = "*"
 pandas = "*"
+wordcloud = "*"
+matplotlib = "*"
+ipykernel = "*"
 
 [dev-packages]
 
