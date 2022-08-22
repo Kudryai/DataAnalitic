@@ -1,3 +1,6 @@
+# Обработка JSON файла Telegram, очистка от стоп-слов и формирование файла txt, 
+# для дальнейшего создания облака слов.
+
 import json
 import matplotlib.pyplot as plt
 
@@ -14,7 +17,7 @@ for i in mas:
     i = str(i).lower()
     for j in i:
         if j.isalpha() or j == ' ' or j == '-' :
-            stroka = stroka.strip('abcdefgjklmnoprstqwzxuihyvo')
+            stroka = stroka.strip('abcdefgjklmnoprstqwzxuihyvo-')
             stroka += j.replace(",", " ")
 data = stroka.split()
 stop_words = open('/mnt/c/Users/user/Desktop/DataAnalyst/DataAnalyst/DataAnalyst/funny/stop-ru.txt', 'r', encoding='utf8')
