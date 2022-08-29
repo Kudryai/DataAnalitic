@@ -12,6 +12,9 @@ pandas = "*"
 wordcloud = "*"
 matplotlib = "*"
 ipykernel = "*"
+xlrd = "*"
+openpyxl = "*"
+seaborn = "*"
 
 [dev-packages]
 
