@@ -5,13 +5,13 @@
 Здесь выложены шаги и выполненая стажировка по Дата аналитике, так же в дальнейшем здесь буду 
 опубликовывать работы по направлению - Анализ данных:
 Инструменты используемые для решения задач:
-<a>Python<\a>
-<a>Pandas<\a>
-<a>Matplotlib\Seaborn<\a>
-<a>Beautifulsoup<\a>
-<a>Scrapy<\a>
-<a>Selenium<\a>
-<a>Requests<\a>
-<a>SciPy<\a>
-<a>PostgreSQL<\a>
-<a>DataLens<\a>
+<a>Python</a>
+<a>Pandas</a>
+<a>Matplotlib\Seaborn</a>
+<a>Beautifulsoup</a>
+<a>Scrapy</a>
+<a>Selenium</a>
+<a>Requests</a>
+<a>SciPy</a>
+<a>PostgreSQL</a>
+<a>DataLens</a>
