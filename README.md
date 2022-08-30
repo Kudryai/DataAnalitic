@@ -5,13 +5,13 @@
 Здесь выложены шаги и выполненая стажировка по Дата аналитике, так же в дальнейшем здесь буду 
 опубликовывать работы по направлению - Анализ данных:
 Инструменты используемые для решения задач:
-<p>Python</p>
-<p>Pandas</p>
-<p>Matplotlib\Seaborn</p>
-<p>Beautifulsoup</p>
-<p>Scrapy</p>
-<p>Selenium</p>
-<p>Requests</p>
-<p>SciPy</p>
-<p>PostgreSQL</p>
-<p>DataLens</p>
+<p>:monocle_face: Python</p>
+<p>:monocle_face: Pandas</p>
+<p>:monocle_face: Matplotlib\Seaborn</p>
+<p>:monocle_face: Beautifulsoup</p>
+<p>:monocle_face: Scrapy</p>
+<p>:monocle_face: Selenium</p>
+<p>:monocle_face: Requests</p>
+<p>:monocle_face: SciPy</p>
+<p>:monocle_face: PostgreSQL</p>
+<p>:monocle_face: DataLens</p>
