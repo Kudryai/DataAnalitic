@@ -22,32 +22,29 @@ options.add_argument("--log-level=3")
 
 driver = undetected_chromedriver.Chrome(options)
 try:
-    url = "https://nbcomputers.ru/"
-    driver.get(url)
-    SearchInput = driver.find_element(By.XPATH, "//input[@type='search']")
-    SearchInput.send_keys("Lenovo")
+    url = "https://1000kem.ru/catalog/vse_dlya_doma_1/"
+    driver.set_window_size(1024, 600)
+    driver.maximize_window()
     action = ActionChains(driver)
-    but = driver.find_element(By.XPATH, "//button[@type='submit']")
-    action.move_to_element(but)
-    action.send_keys(Keys.ENTER).perform()
-    driver.implicitly_wait(100)
-    print(driver.title)
-    time.sleep(30)
-    # action = ActionChains(driver)
-
-    # driver.implicitly_wait(10)
-    # action.move_to_element(butt)
-    # action.perform()
-    # driver.implicitly_wait(10)
-    # html = driver.page_source
-    # with open('/mnt/c/Users/user/Desktop/DataAnalyst/DataAnalyst/DataAnalyst/DataMining/Bs4_selenium_scrapy/ga.html','w') as f:
-    #     f.write(html)
-
-
+    driver.get(url)
+    driver.implicitly_wait(10)
+    action.move_to_element(driver.find_element(By.XPATH, '//*[@id="content"]/div[2]/div[2]/div[2]/div[1]/a[6]'))
+    action.perform()
+    WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="catalog_sorter"]/div[1]/div/a[3]/span[1]'))).click()
+    time.sleep(1)
+    WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="catalog_sorter"]/div[1]/div/a[3]/span[1]'))).click()
+    html2 = driver.find_elements(By.CSS_SELECTOR,'div.catalog-item-price')
+    while True:
+        driver.execute_script("document.querySelector('#ajaxpages_catalog_identifier > div.ajaxpages.personal-tabsheader > a > span.tabbg-center').click();")
+        time.sleep(3)
+        # WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'a.nofollow'))).click()
+        # html = driver.find_element(By.CSS_SELECTOR, 'div.catalog-item-name')
+        html2 = driver.find_elements(By.CSS_SELECTOR,'div.catalog-item-price')
 
 except Exception as ex:
     print(ex)
-# html = driver.page_source
-# with open('/mnt/c/Users/user/Desktop/DataAnalyst/DataAnalyst/DataAnalyst/DataMining/VK_API/Bs4_selenium_scrapy/Divki.html', 'w') as file:
+
+html = driver.page_source
+# with open('/mnt/c/Users/user/Desktop/DataAnalyst/DataAnalyst/DataAnalyst/DataMining/Bs4_selenium_scrapy/ga.html', 'w') as file:
 #     print(html, file=file)
 driver.quit()
