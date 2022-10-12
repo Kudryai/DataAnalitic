@@ -15,3 +15,4 @@
 <p>:monocle_face: SciPy</p>
 <p>:monocle_face: PostgreSQL</p>
 <p>:monocle_face: DataLens</p>
+<p>:monocle_face: PowerBI</p>
